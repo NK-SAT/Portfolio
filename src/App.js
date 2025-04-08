@@ -8,16 +8,17 @@ import Contact from './components/Contact/Contact';
 import Skills from './components/Skills/Skills';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
+const App = () => {
   useEffect(() => {
-    document.body.className = darkMode ? 'dark-mode' : '';
-  }, [darkMode]);
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      alert("For best experience, please view this website on desktop.");
+    }
+  }, []);
 
   return (
     <>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Navbar />
       <Hero />
       <Experience />
       <Skills />

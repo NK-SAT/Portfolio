@@ -1,10 +1,14 @@
 import React from 'react';
 import './Navbar.css';
+import { FaLaptopCode } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">MyPortfolio</div>
+      <div className="logo">
+      <FaLaptopCode style={{ marginRight: "8px" }} />
+      Nithish.Dev
+      </div>
       <ul className="nav-links">
         <li><a href="#about">Experience</a></li>
         <li><a href="#skills">Skill</a></li>
