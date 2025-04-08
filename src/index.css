@@ -1,0 +1,19 @@
+:root {
+  --bg-color: #0b1120;         /* Velvet Purple */
+  --text-color: #ffffff;
+  --text-secondary: #d1c4e9;
+  --card-bg: #2c0047;
+  --accent-color: #a56eff;
+  --bg-contact: #101d2e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}

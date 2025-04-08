@@ -1,0 +1,101 @@
+.experience {
+    padding: 30px 20px;
+    background-color: var(--bg-color);
+    color: #b8bdbc;
+    max-width: 70%;
+    margin: auto;
+  }
+  
+  .experience h2 {
+    font-size: 2.5rem;
+    margin: 20px;
+    text-align: center;
+    color:#e2f6f4;
+  }
+  
+  .timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #14ffe9;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    width: 10px;
+    height: 10px;
+    background-color: #14ffe9;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .timeline-content {
+    padding-left: 20px;
+  }
+  
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #efeeee;
+  }
+  
+  .timeline-content .duration {
+    font-size: 0.95rem;
+    color: #efeeee;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .timeline-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .timeline-content ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .experience {
+    position: relative;
+    padding: 30px 20px;
+    background-color: var(--bg-color);
+    color: #b8bdbc;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .experience-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Behind all content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*pointer-events: none;  Allows clicks to pass through */
+  }
+  
+  .background-image {
+    width: 750px;
+    opacity: 0.12;
+    object-fit: contain;
+  }
+  
+  .timeline,
+  .experience h2 {
+    position: relative;
+    z-index: 0; /* Bring main content above the background image */
+  }
+  

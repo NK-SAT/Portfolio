@@ -1,0 +1,41 @@
+.contact {
+  padding: 20px 20px;
+  background-color: var(--bg-contact);
+  color: var(--text-color);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 60px;
+}
+
+.contact-text h2 {
+  margin: 0px;
+  font-size: 2rem;
+}
+
+.contact-text p {
+  color: var(--text-secondary);
+  margin: 0px;
+  font-size: 1rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 30px;
+  margin: 10px;
+}
+
+.contact-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #ffffff;
+}
