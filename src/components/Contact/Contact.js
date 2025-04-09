@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -10,10 +11,22 @@ const Contact = () => {
           <p>Feel free to reach out through any of the platforms!</p>
         </div>
         <div className="contact-links">
-          <a href="mailto:nk.sat.27@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/nithish-kumar-3b1b4222a" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/NK-SAT" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
+  <p className="contact-cta">👇 Tap an icon to reach me!</p>
+  <div className="contact-links-icons">
+    <a href="tel:+916369642432" aria-label="Phone">
+      <FaPhone size={28} />
+    </a>
+    <a href="mailto:nk.sat.27@gmail.com" aria-label="Email">
+      <FaEnvelope size={28} />
+    </a>
+    <a href="https://www.linkedin.com/in/nithish-kumar-3b1b4222a" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+      <FaLinkedin size={28} />
+    </a>
+    <a href="https://github.com/NK-SAT" target="_blank" rel="noreferrer" aria-label="GitHub">
+      <FaGithub size={28} />
+    </a>
+  </div>
+</div>
       </div>
     </section>
   );

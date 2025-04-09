@@ -1,10 +1,13 @@
 .projects {
-  padding: 0px 20px 60px 20px;
+  padding: 0px 20px 10px 20px;
   background-color: #0b1120; /* Dark background */
   text-align: center;
   color: #ffffff;
 }
 
+.projects h2{
+  font-size: 2rem;
+}
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +34,7 @@
 .project-card img {
   width: 100%;
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .project-card h3 {
@@ -58,4 +61,62 @@
 .project-card a:hover {
   text-decoration: underline;
   color: #14ffe9;
+}
+
+.certifications {
+  padding: 0px 20px 20px 20px;
+  background-color: #0b1120; /* Same dark background */
+  text-align: center;
+  color: #ffffff;
+}
+
+.certifications h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 35px 1px 1px 1px;
+}
+
+.certifications .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.certifications .project-card {
+  background-color: #162036; /* same card background */
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certifications .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.25);
+}
+
+.certifications .project-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.certifications .project-card h3 a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.certifications .project-card h3 a:hover {
+  color: #14ffe9;
+  text-decoration: underline;
+}
+
+.certifications .project-card p {
+  font-size: 0.95rem;
+  color: #cccccc;
 }

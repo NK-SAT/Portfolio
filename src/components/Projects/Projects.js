@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: 'Portfolio Site - React',
       description: 'This website you are looking at — built with React, styled from scratch.',
-      link: '#',
+      link: 'https://github.com/NK-SAT/Portfolio',
     },
     ,
     {
@@ -36,20 +36,61 @@ const Projects = () => {
     },
   ];
 
+  const certifications = [
+    {
+      title: "Ideathon - 🥈 2nd Prize",
+      description: "Feb 2023",
+      link: "https://drive.google.com/file/d/13eO6Bk6rvYSoTZy7crw818_2_JVA9JX7/view?usp=sharing",
+    },
+    {
+      title: "Internship Completion - Optisol Pvt Ltd",
+      description: "Full Stack | June 2023 - July 2023",
+      link: "https://drive.google.com/file/d/1rVbuCVVXwSDR5fN2D3xef1s1Nt2qCvNS/view?usp=drive_link",
+    },
+    {
+      title: "Ethical Hacking Certfication - NPTEL",
+      description: "IIT Kharagpur | July 2025 - Oct 2025",
+      link: "https://drive.google.com/file/d/1GBQoylIGKuQExpsiTRHOU92oEOEeY0RH/view?usp=sharing",
+    },
+    {
+      title: "CyberSecurity - Course",
+      description: "IIT Bhubaneshwar | June 2022 - July 2022",
+      link: "https://drive.google.com/file/d/1Lu9r7_nmppvr5tvd4d6mrBWTHjN_-dpk/view?usp=sharing",
+    },
+  ];
+
   return (
-    <section className="projects" id="projects">
-      <h2>Projects</h2>
-      <div className="project-grid">
-        {projectList.map((project, index) => (
-          <div className="project-card" key={index}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noreferrer">View Project</a>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+    <>
+      <section className="projects" id="projects">
+        <h2>Projects</h2>
+        <div className="project-grid">
+          {projectList.map((project, index) => (
+            <div className="project-card" key={index}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <a href={project.link} target="_blank" rel="noreferrer">View Project</a>
+            </div>
+          ))}
+        </div>
+      </section>
+  
+      <section className="certifications" id="certifications">
+        <h2>Certifications</h2>
+        <div className="project-grid">
+          {certifications.map((cert, index) => (
+            <div className="project-card" key={index}>
+              <h3>
+                <a href={cert.link} target="_blank" rel="noreferrer">
+                  {cert.title}
+                </a>
+              </h3>
+              <p>{cert.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );  
 };
 
 export default Projects;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Body.css';
-import profilePic from '../../assets/good1.jpg';
+import profilePic from '../../assets/profPic.jpg';
 import decor from '../../assets/tran.png';
 
 const Body = () => {
@@ -8,7 +8,7 @@ const Body = () => {
     <section className="body-section" id="home">
       <div className="body-container">
         <div className="body-image">
-          <img src={profilePic} alt="Profile" />
+          <img src={profilePic} alt="Profile" className="profile-image" />
         </div>
         <div className="body-content">
           <h1>Hello, I'm Nithish Kumar</h1>
