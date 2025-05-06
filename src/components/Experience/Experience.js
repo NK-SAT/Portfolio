@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.css';
+import { HiOutlineDocumentText } from "react-icons/hi";
 import tranGraph from '../../assets/graphtran.png'
 
 const Experience = () => {
@@ -13,7 +14,17 @@ const Experience = () => {
         <div className="timeline-item">
           <div className="timeline-dot" />
           <div className="timeline-content">
-            <h3>Nissan Digital India (NDI)</h3>
+          <h3> Nissan Digital India (NDI)
+            <div className="tooltip-container">
+              <a
+                href="https://drive.google.com/file/d/1RkC7ofj0Yqvw7NKAOvvVO7zVcnQsu7P-/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="document-icon">
+                <HiOutlineDocumentText />
+                <span className="custom-tooltip">View Completion Certificate</span>
+              </a>
+            </div></h3>
             <span className="duration">July 2024 – March 2025</span>
             <ul>
               <li>Completed an 8-month internship at Nissan Digital India (NDI) as a Full Stack Developer. Worked extensively
@@ -34,7 +45,16 @@ const Experience = () => {
         <div className="timeline-item">
           <div className="timeline-dot" />
           <div className="timeline-content">
-            <h3>Optisol Solutions</h3>
+            <h3>Optisol Solutions <div className="tooltip-container">
+              <a
+                href="https://drive.google.com/file/d/1rVbuCVVXwSDR5fN2D3xef1s1Nt2qCvNS/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="document-icon">
+                <HiOutlineDocumentText />
+                <span className="custom-tooltip">View Completion Certificate</span>
+              </a>
+            </div></h3>
             <span className="duration">June 2023 – July 2023</span>
             <ul>
               <li>One-month Full Stack Internship in Chennai.</li>

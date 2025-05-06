@@ -43,11 +43,6 @@ const Projects = () => {
       link: "https://drive.google.com/file/d/13eO6Bk6rvYSoTZy7crw818_2_JVA9JX7/view?usp=sharing",
     },
     {
-      title: "Internship Completion - Optisol Pvt Ltd",
-      description: "Full Stack | June 2023 - July 2023",
-      link: "https://drive.google.com/file/d/1rVbuCVVXwSDR5fN2D3xef1s1Nt2qCvNS/view?usp=drive_link",
-    },
-    {
       title: "Ethical Hacking Certfication - NPTEL",
       description: "IIT Kharagpur | July 2025 - Oct 2025",
       link: "https://drive.google.com/file/d/1GBQoylIGKuQExpsiTRHOU92oEOEeY0RH/view?usp=sharing",
