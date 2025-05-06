@@ -55,7 +55,6 @@
 .flip-card-front {
   background-color: #1e2a3a;
   color: white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
 
@@ -87,7 +86,7 @@
   background-color: #0d0f14;
   color: white;
   transform: rotateY(180deg);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 255, 191, 0.356);
   padding: 30px;
   z-index: 1;
   text-align: center;
