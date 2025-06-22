@@ -69,3 +69,29 @@
   pointer-events: none;
   z-index: 0;
 }
+.leetcode-badge strong {
+  font-weight: 600;
+}
+
+.leetcode-badge {
+  margin-top: 16px;
+  font-size: 1.2rem;
+  color: var(--text-color, #333);
+}
+
+.leetcode-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leetcode-link {
+  margin-top: 9px;
+  font-size: 1rem;
+}
+
+.leetcode-badge a {
+  color: #00b0ff;
+  font-weight: 500;
+  text-decoration: none;
+}

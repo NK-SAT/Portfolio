@@ -21,3 +21,24 @@
     color: var(--text-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
+
+  .leetcode-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: var(--text-color, #333); /* Fallback to #333 if --text-color is not set */
+  flex-wrap: wrap;
+}
+
+.leetcode-badge a {
+  margin-left: 5px;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.leetcode-badge a:hover {
+  text-decoration: underline;
+}
